@@ -8,8 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		363B78C818A217E30080995A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363B78C718A217E30080995A /* Cocoa.framework */; };
-		363B78D218A217E40080995A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 363B78D018A217E40080995A /* InfoPlist.strings */; };
+		363B790218A21EA00080995A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363B78C718A217E30080995A /* Cocoa.framework */; };
+		363B790318A21EA00080995A /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363B78E718A21E340080995A /* PreferencePanes.framework */; };
+		363B791F18A220000080995A /* CompulsionPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363B791818A220000080995A /* CompulsionPreferences.xib */; };
+		363B792118A220000080995A /* OCDPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = 363B791B18A220000080995A /* OCDPreferences.h */; };
+		363B792218A220000080995A /* OCDPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 363B791C18A220000080995A /* OCDPreferences.m */; };
+		363B792318A220000080995A /* Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 363B791D18A220000080995A /* Prefix.pch */; };
+		363B792518A221EB0080995A /* MenuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 363B792418A221EB0080995A /* MenuIcon.png */; };
+		363B792718A222240080995A /* CompulsionPreferences.icns in Resources */ = {isa = PBXBuildFile; fileRef = 363B792618A222240080995A /* CompulsionPreferences.icns */; };
+		363B792A18A222E60080995A /* OCDLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 363B792918A222E60080995A /* OCDLoader.m */; };
+		363B793118A225770080995A /* OCDController.m in Sources */ = {isa = PBXBuildFile; fileRef = 363B793018A225770080995A /* OCDController.m */; };
+		363B793418A226840080995A /* OCDAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 363B793318A226840080995A /* OCDAdditions.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		363B792D18A224100080995A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 363B78BC18A217E20080995A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 363B790018A21EA00080995A;
+			remoteInfo = Preferences;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		363B78C418A217E30080995A /* Compulsion.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Compulsion.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -17,9 +37,23 @@
 		363B78CA18A217E30080995A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		363B78CB18A217E30080995A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		363B78CC18A217E30080995A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		363B78CF18A217E40080995A /* Compulsion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Compulsion-Info.plist"; sourceTree = "<group>"; };
-		363B78D118A217E40080995A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		363B78D318A217E40080995A /* Compulsion-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Compulsion-Prefix.pch"; sourceTree = "<group>"; };
+		363B78DB18A21DA70080995A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		363B78DD18A21DA70080995A /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Source/Prefix.pch; sourceTree = "<group>"; };
+		363B78E718A21E340080995A /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = System/Library/Frameworks/PreferencePanes.framework; sourceTree = SDKROOT; };
+		363B790118A21EA00080995A /* Compulsion.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Compulsion.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		363B791818A220000080995A /* CompulsionPreferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompulsionPreferences.xib; sourceTree = "<group>"; };
+		363B791918A220000080995A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		363B791B18A220000080995A /* OCDPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDPreferences.h; sourceTree = "<group>"; };
+		363B791C18A220000080995A /* OCDPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDPreferences.m; sourceTree = "<group>"; };
+		363B791D18A220000080995A /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Source/Prefix.pch; sourceTree = "<group>"; };
+		363B792418A221EB0080995A /* MenuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuIcon.png; sourceTree = "<group>"; };
+		363B792618A222240080995A /* CompulsionPreferences.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = CompulsionPreferences.icns; sourceTree = "<group>"; };
+		363B792818A222E60080995A /* OCDLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDLoader.h; sourceTree = "<group>"; };
+		363B792918A222E60080995A /* OCDLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDLoader.m; sourceTree = "<group>"; };
+		363B792F18A225770080995A /* OCDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDController.h; sourceTree = "<group>"; };
+		363B793018A225770080995A /* OCDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDController.m; sourceTree = "<group>"; };
+		363B793218A226840080995A /* OCDAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDAdditions.h; sourceTree = "<group>"; };
+		363B793318A226840080995A /* OCDAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDAdditions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,13 +65,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		363B78FC18A21EA00080995A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363B790218A21EA00080995A /* Cocoa.framework in Frameworks */,
+				363B790318A21EA00080995A /* PreferencePanes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		363B78BB18A217E10080995A = {
 			isa = PBXGroup;
 			children = (
-				363B78CD18A217E30080995A /* Compulsion */,
+				363B78D918A21DA70080995A /* Plug-In */,
+				363B790418A21EA00080995A /* Preferences */,
 				363B78C618A217E30080995A /* Frameworks */,
 				363B78C518A217E30080995A /* Products */,
 			);
@@ -47,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				363B78C418A217E30080995A /* Compulsion.bundle */,
+				363B790118A21EA00080995A /* Compulsion.prefPane */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				363B78C718A217E30080995A /* Cocoa.framework */,
+				363B78E718A21E340080995A /* PreferencePanes.framework */,
 				363B78C918A217E30080995A /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -70,30 +116,85 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		363B78CD18A217E30080995A /* Compulsion */ = {
+		363B78D918A21DA70080995A /* Plug-In */ = {
 			isa = PBXGroup;
 			children = (
-				363B78CE18A217E40080995A /* Supporting Files */,
+				363B78DD18A21DA70080995A /* Prefix.pch */,
+				363B78DC18A21DA70080995A /* Source */,
+				363B78DA18A21DA70080995A /* Assets */,
 			);
-			path = Compulsion;
+			path = "Plug-In";
 			sourceTree = "<group>";
 		};
-		363B78CE18A217E40080995A /* Supporting Files */ = {
+		363B78DA18A21DA70080995A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				363B78CF18A217E40080995A /* Compulsion-Info.plist */,
-				363B78D018A217E40080995A /* InfoPlist.strings */,
-				363B78D318A217E40080995A /* Compulsion-Prefix.pch */,
+				363B78DB18A21DA70080995A /* Info.plist */,
+				363B792418A221EB0080995A /* MenuIcon.png */,
 			);
-			name = "Supporting Files";
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		363B78DC18A21DA70080995A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				363B793218A226840080995A /* OCDAdditions.h */,
+				363B793318A226840080995A /* OCDAdditions.m */,
+				363B792818A222E60080995A /* OCDLoader.h */,
+				363B792918A222E60080995A /* OCDLoader.m */,
+				363B792F18A225770080995A /* OCDController.h */,
+				363B793018A225770080995A /* OCDController.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		363B790418A21EA00080995A /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				363B791D18A220000080995A /* Prefix.pch */,
+				363B791A18A220000080995A /* Source */,
+				363B791618A220000080995A /* Assets */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		363B791618A220000080995A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				363B792618A222240080995A /* CompulsionPreferences.icns */,
+				363B791818A220000080995A /* CompulsionPreferences.xib */,
+				363B791918A220000080995A /* Info.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		363B791A18A220000080995A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				363B791B18A220000080995A /* OCDPreferences.h */,
+				363B791C18A220000080995A /* OCDPreferences.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		363B78FD18A21EA00080995A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363B792118A220000080995A /* OCDPreferences.h in Headers */,
+				363B792318A220000080995A /* Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		363B78C318A217E30080995A /* Compulsion */ = {
+		363B78C318A217E30080995A /* Plug-In */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 363B78D618A217E40080995A /* Build configuration list for PBXNativeTarget "Compulsion" */;
+			buildConfigurationList = 363B78D618A217E40080995A /* Build configuration list for PBXNativeTarget "Plug-In" */;
 			buildPhases = (
 				363B78C018A217E30080995A /* Sources */,
 				363B78C118A217E30080995A /* Frameworks */,
@@ -102,10 +203,30 @@
 			buildRules = (
 			);
 			dependencies = (
+				363B792E18A224100080995A /* PBXTargetDependency */,
 			);
-			name = Compulsion;
+			name = "Plug-In";
 			productName = Compulsion;
 			productReference = 363B78C418A217E30080995A /* Compulsion.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		363B790018A21EA00080995A /* Preferences */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 363B791318A21EA10080995A /* Build configuration list for PBXNativeTarget "Preferences" */;
+			buildPhases = (
+				363B78FB18A21EA00080995A /* Sources */,
+				363B78FC18A21EA00080995A /* Frameworks */,
+				363B78FD18A21EA00080995A /* Headers */,
+				363B78FE18A21EA00080995A /* Resources */,
+				363B78FF18A21EA00080995A /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Preferences;
+			productName = Preferences;
+			productReference = 363B790118A21EA00080995A /* Compulsion.prefPane */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -123,13 +244,15 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 363B78BB18A217E10080995A;
 			productRefGroup = 363B78C518A217E30080995A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				363B78C318A217E30080995A /* Compulsion */,
+				363B78C318A217E30080995A /* Plug-In */,
+				363B790018A21EA00080995A /* Preferences */,
 			);
 		};
 /* End PBXProject section */
@@ -139,32 +262,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				363B78D218A217E40080995A /* InfoPlist.strings in Resources */,
+				363B792518A221EB0080995A /* MenuIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363B78FE18A21EA00080995A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363B792718A222240080995A /* CompulsionPreferences.icns in Resources */,
+				363B791F18A220000080995A /* CompulsionPreferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		363B78FF18A21EA00080995A /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		363B78C018A217E30080995A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				363B793418A226840080995A /* OCDAdditions.m in Sources */,
+				363B793118A225770080995A /* OCDController.m in Sources */,
+				363B792A18A222E60080995A /* OCDLoader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363B78FB18A21EA00080995A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363B792218A220000080995A /* OCDPreferences.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		363B78D018A217E40080995A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				363B78D118A217E40080995A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		363B792E18A224100080995A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 363B790018A21EA00080995A /* Preferences */;
+			targetProxy = 363B792D18A224100080995A /* PBXContainerItemProxy */;
 		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		363B78D418A217E40080995A /* Debug */ = {
@@ -173,6 +323,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -210,6 +361,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -240,10 +392,10 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Compulsion/Compulsion-Prefix.pch";
-				INFOPLIST_FILE = "Compulsion/Compulsion-Info.plist";
+				GCC_PREFIX_HEADER = "Plug-In/Source/Prefix.pch";
+				INFOPLIST_FILE = "Plug-In/Assets/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Compulsion;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -253,11 +405,41 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Compulsion/Compulsion-Prefix.pch";
-				INFOPLIST_FILE = "Compulsion/Compulsion-Info.plist";
+				GCC_PREFIX_HEADER = "Plug-In/Source/Prefix.pch";
+				INFOPLIST_FILE = "Plug-In/Assets/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Compulsion;
 				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		363B791418A21EA10080995A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Preferences/Source/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Preferences/Assets/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_NAME = Compulsion;
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Debug;
+		};
+		363B791518A21EA10080995A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Preferences/Source/Prefix.pch;
+				INFOPLIST_FILE = Preferences/Assets/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_NAME = Compulsion;
+				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Release;
 		};
@@ -273,11 +455,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		363B78D618A217E40080995A /* Build configuration list for PBXNativeTarget "Compulsion" */ = {
+		363B78D618A217E40080995A /* Build configuration list for PBXNativeTarget "Plug-In" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				363B78D718A217E40080995A /* Debug */,
 				363B78D818A217E40080995A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		363B791318A21EA10080995A /* Build configuration list for PBXNativeTarget "Preferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363B791418A21EA10080995A /* Debug */,
+				363B791518A21EA10080995A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

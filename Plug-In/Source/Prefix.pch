@@ -1,0 +1,7 @@
+#ifdef __OBJC__
+
+@import Cocoa;
+
+#import "OCDAdditions.h"
+
+#endif
