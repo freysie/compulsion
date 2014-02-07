@@ -4,12 +4,16 @@ extern const NSUInteger OCDKeyEquivalentMask;
 
 @interface NSApplication (OCDAdditions)
 
-+ (instancetype)windowMenu;
+@property (readonly) NSMenu *ocd_windowMenu;
 
 @end
 
-@interface NSMenuItem (OCDAdditions)
+@interface NSMenu (OCDAdditions)
 
-+ (instancetype)itemWithTitle:(NSString *)title target:(id)target action:(SEL)action keyEquivalent:(NSString *)keyEquivalent;
+- (NSMenuItem *)ocd_addSeparatorItem;
+
+- (NSMenuItem *)ocd_addItemWithTitle:(NSString *)title submenu:(NSMenu *)submenu;
+
+- (NSMenuItem *)ocd_addItemWithTitle:(NSString *)title target:(id)target action:(SEL)action keyEquivalent:(NSString *)keyEquivalent;
 
 @end

@@ -2,27 +2,38 @@
 
 const NSUInteger OCDKeyEquivalentMask = NSControlKeyMask | NSAlternateKeyMask | NSCommandKeyMask;
 
-@implementation NSMenu (OCDAdditions)
+@implementation NSApplication (OCDAdditions)
 
-+ (instancetype)windowMenu {
-	for (NSMenuItem *item in [NSApp mainMenu].itemArray)
+- (NSMenu *)ocd_windowMenu {
+	for (NSMenuItem *item in self.mainMenu.itemArray)
 		if ([[item.submenu valueForKey:@"_menuName"] isEqualToString:@"NSWindowsMenu"])
 			return item.submenu;
 	
-	return [[NSApp mainMenu] itemWithTitle:@"Window"].submenu;
+	return [self.mainMenu itemWithTitle:@"Window"].submenu;
 }
 
 @end
 
-@implementation NSMenuItem (OCDAdditions)
+@implementation NSMenu (OCDAdditions)
 
-+ (instancetype)itemWithTitle:(NSString *)title target:(id)target action:(SEL)action keyEquivalent:(NSString *)keyEquivalent {
-	NSMenuItem *item = [NSMenuItem new];
-	item.title = title;
+- (NSMenuItem *)ocd_addSeparatorItem {
+	NSMenuItem *item = [NSMenuItem separatorItem];
+	[self addItem:item];
+	return item;
+}
+
+- (NSMenuItem *)ocd_addItemWithTitle:(NSString *)title submenu:(NSMenu *)submenu {
+	NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:title action:nil keyEquivalent:nil];
+	item.submenu = submenu;
+	[self addItem:item];
+	return item;
+}
+
+- (NSMenuItem *)ocd_addItemWithTitle:(NSString *)title target:(id)target action:(SEL)action keyEquivalent:(NSString *)keyEquivalent {
+	NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:title action:action keyEquivalent:keyEquivalent];
 	item.target = target;
-	item.action = action;
-	item.keyEquivalent = keyEquivalent;
 	item.keyEquivalentModifierMask = OCDKeyEquivalentMask;
+	[self addItem:item];
 	return item;
 }
 
