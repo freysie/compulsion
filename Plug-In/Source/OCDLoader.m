@@ -4,6 +4,8 @@
 @implementation OCDLoader
 
 + (void)load {
+//	OCDApp = NSApp;
+	
 	[OCDController.sharedController addMenusToWindowMenu];
 }
 

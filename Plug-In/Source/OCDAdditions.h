@@ -1,5 +1,7 @@
 @import Cocoa;
 
+//extern NSApplication *OCDApp;
+
 extern const NSUInteger OCDKeyEquivalentMask;
 
 @interface NSApplication (OCDAdditions)
@@ -17,6 +19,8 @@ extern const NSUInteger OCDKeyEquivalentMask;
 - (NSMenuItem *)ocd_addItemWithTitle:(NSString *)title submenu:(NSMenu *)submenu;
 
 - (NSMenuItem *)ocd_addItemWithTitle:(NSString *)title target:(id)target action:(SEL)action keyEquivalent:(NSString *)keyEquivalent;
+
+- (NSMenuItem *)ocd_addItemWithTitle:(NSString *)title target:(id)target action:(SEL)action keyEquivalent:(NSString *)keyEquivalent indentationLevel:(NSUInteger)indentationLevel;
 
 - (NSMenuItem *)ocd_insertItemWithTitle:(NSString *)title submenu:(NSMenu *)submenu atIndex:(NSUInteger)index;
 

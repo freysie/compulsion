@@ -45,6 +45,12 @@ const NSUInteger OCDKeyEquivalentMask = NSControlKeyMask | NSAlternateKeyMask | 
 	return item;
 }
 
+- (NSMenuItem *)ocd_addItemWithTitle:(NSString *)title target:(id)target action:(SEL)action keyEquivalent:(NSString *)keyEquivalent indentationLevel:(NSUInteger)indentationLevel {
+	NSMenuItem *item = [self ocd_addItemWithTitle:title target:target action:action keyEquivalent:keyEquivalent];
+	item.indentationLevel = indentationLevel;
+	return item;
+}
+
 - (NSMenuItem *)ocd_insertItemWithTitle:(NSString *)title submenu:(NSMenu *)submenu atIndex:(NSUInteger)index {
 	NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:title action:nil keyEquivalent:@""];
 	item.submenu = submenu;

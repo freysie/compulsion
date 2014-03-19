@@ -12,55 +12,61 @@
 - (void)addMenusToWindowMenu {
 	NSMenu *menu = [NSMenu new];
 	
-	[menu ocd_addItemWithTitle:@"Move" target:nil action:nil keyEquivalent:@""];
+	[menu ocd_addDisabledItemWithTitle:@"Move"];
 	
 	[menu ocd_addItemWithTitle:@"Move to Center" target:self action:@selector(moveWindowToCenter) keyEquivalent:@"c"];
 	
-	[menu ocd_addSeparatorItem];
+//	[menu ocd_addSeparatorItem];
 	
-	[menu ocd_addItemWithTitle:@"Move to Top Left"   target:self action:@selector(moveWindowToTopLeft)   keyEquivalent:@"q"];
-	[menu ocd_addItemWithTitle:@"Move to Top Center" target:self action:@selector(moveWindowToTopMiddle) keyEquivalent:@"w"];
-	[menu ocd_addItemWithTitle:@"Move to Top Right"  target:self action:@selector(moveWindowToTopRight)  keyEquivalent:@"e"];
+	[menu ocd_addItemWithTitle:@"Move to Top Left"   target:self action:@selector(moveWindowToTopLeft)   keyEquivalent:@"q" indentationLevel:1];
+	[menu ocd_addItemWithTitle:@"Move to Top Center" target:self action:@selector(moveWindowToTopMiddle) keyEquivalent:@"w" indentationLevel:1];
+	[menu ocd_addItemWithTitle:@"Move to Top Right"  target:self action:@selector(moveWindowToTopRight)  keyEquivalent:@"e" indentationLevel:1];
 	
-	[menu ocd_addSeparatorItem];
+//	[menu ocd_addSeparatorItem];
 	
-	[menu ocd_addItemWithTitle:@"Move to Bottom Left"   target:self action:@selector(moveWindowToBottomLeft)   keyEquivalent:@"z"];
-	[menu ocd_addItemWithTitle:@"Move to Bottom Center" target:self action:@selector(moveWindowToBottomMiddle) keyEquivalent:@"x"];
-	[menu ocd_addItemWithTitle:@"Move to Bottom Right"  target:self action:@selector(moveWindowToBottomRight)  keyEquivalent:@"v"];
+	[menu ocd_addItemWithTitle:@"Move to Bottom Left"   target:self action:@selector(moveWindowToBottomLeft)   keyEquivalent:@"z" indentationLevel:1];
+	[menu ocd_addItemWithTitle:@"Move to Bottom Center" target:self action:@selector(moveWindowToBottomMiddle) keyEquivalent:@"x" indentationLevel:1];
+	[menu ocd_addItemWithTitle:@"Move to Bottom Right"  target:self action:@selector(moveWindowToBottomRight)  keyEquivalent:@"v" indentationLevel:1];
 	
-	[menu ocd_addSeparatorItem];
+//	[menu ocd_addSeparatorItem];
 	
-	[menu ocd_addItemWithTitle:[NSString stringWithFormat:@"Move %.0f pt Up",    self.nudgeGranularity] target:self action:@selector(moveWindowSlightlyUp)    keyEquivalent:@"↑"];
-	[menu ocd_addItemWithTitle:[NSString stringWithFormat:@"Move %.0f pt Right", self.nudgeGranularity] target:self action:@selector(moveWindowSlightlyRight) keyEquivalent:@"→"];
-	[menu ocd_addItemWithTitle:[NSString stringWithFormat:@"Move %.0f pt Down",  self.nudgeGranularity] target:self action:@selector(moveWindowSlightlyDown)  keyEquivalent:@"↓"];
-	[menu ocd_addItemWithTitle:[NSString stringWithFormat:@"Move %.0f pt Left",  self.nudgeGranularity] target:self action:@selector(moveWindowSlightlyLeft)  keyEquivalent:@"←"];
-	
-	[menu ocd_addSeparatorItem];
-	
-	[menu ocd_addItemWithTitle:@"Resize to Screen Size"   target:self action:@selector(resizeWindowToScreenSize)   keyEquivalent:@"m"];
-	[menu ocd_addItemWithTitle:@"Resize to Screen Width"  target:self action:@selector(resizeWindowToScreenWidth)  keyEquivalent:@"j"];
-	[menu ocd_addItemWithTitle:@"Resize to Screen Height" target:self action:@selector(resizeWindowToScreenHeight) keyEquivalent:@"h"];
+	[menu ocd_addItemWithTitle:[NSString stringWithFormat:@"Move %.0f pt Up",    self.nudgeGranularity] target:self action:@selector(moveWindowSlightlyUp)    keyEquivalent:@"↑" indentationLevel:1];
+	[menu ocd_addItemWithTitle:[NSString stringWithFormat:@"Move %.0f pt Right", self.nudgeGranularity] target:self action:@selector(moveWindowSlightlyRight) keyEquivalent:@"→" indentationLevel:1];
+	[menu ocd_addItemWithTitle:[NSString stringWithFormat:@"Move %.0f pt Down",  self.nudgeGranularity] target:self action:@selector(moveWindowSlightlyDown)  keyEquivalent:@"↓" indentationLevel:1];
+	[menu ocd_addItemWithTitle:[NSString stringWithFormat:@"Move %.0f pt Left",  self.nudgeGranularity] target:self action:@selector(moveWindowSlightlyLeft)  keyEquivalent:@"←" indentationLevel:1];
 	
 	[menu ocd_addSeparatorItem];
 	
-	[menu ocd_addItemWithTitle:@"Resize to ⅔ Screen Width" target:self action:@selector(resizeWindowToTwoThirdsOfScreenWidth)   keyEquivalent:@"1"];
-	[menu ocd_addItemWithTitle:@"Resize to ½ Screen Width" target:self action:@selector(resizeWindowToOneHalfOfScreenWidth)     keyEquivalent:@"2"];
-	[menu ocd_addItemWithTitle:@"Resize to ⅓ Screen Width" target:self action:@selector(resizeWindowToOneThirdOfScreenWidth)    keyEquivalent:@"3"];
-	[menu ocd_addItemWithTitle:@"Resize to ¼ Screen Width" target:self action:@selector(resizeWindowToOneQuarterOfScreenWidth)  keyEquivalent:@"4"];
-	[menu ocd_addItemWithTitle:@"Resize to ⅕ Screen Width" target:self action:@selector(resizeWindowToOneFifthOfScreenWidth)    keyEquivalent:@"5"];
-	[menu ocd_addItemWithTitle:@"Resize to ⅙ Screen Width" target:self action:@selector(resizeWindowToOneSixthOfScreenWidth)    keyEquivalent:@"6"];
-	[menu ocd_addItemWithTitle:@"Resize to ⅜ Screen Width" target:self action:@selector(resizeWindowToThreeEightsOfScreenWidth) keyEquivalent:@"7"];
-	[menu ocd_addItemWithTitle:@"Resize to ⅛ Screen Width" target:self action:@selector(resizeWindowToOneEightOfScreenWidth)    keyEquivalent:@"8"];
-	[menu ocd_addItemWithTitle:@"Resize to ⅝ Screen Width" target:self action:@selector(resizeWindowToFiveEightsOfScreenWidth)  keyEquivalent:@"9"];
+	[menu ocd_addDisabledItemWithTitle:@"Size"];
+	
+	[menu ocd_addItemWithTitle:@"Resize to Screen Size"   target:self action:@selector(resizeWindowToScreenSize)   keyEquivalent:@"m" indentationLevel:1];
+	[menu ocd_addItemWithTitle:@"Resize to Screen Width"  target:self action:@selector(resizeWindowToScreenWidth)  keyEquivalent:@"j" indentationLevel:1];
+	[menu ocd_addItemWithTitle:@"Resize to Screen Height" target:self action:@selector(resizeWindowToScreenHeight) keyEquivalent:@"h" indentationLevel:1];
+	
+//	[menu ocd_addSeparatorItem];
+	
+	[menu ocd_addItemWithTitle:@"Resize to ⅔ of Screen Width" target:self action:@selector(resizeWindowToTwoThirdsOfScreenWidth)   keyEquivalent:@"1" indentationLevel:1];
+	[menu ocd_addItemWithTitle:@"Resize to ½ of Screen Width" target:self action:@selector(resizeWindowToOneHalfOfScreenWidth)     keyEquivalent:@"2" indentationLevel:1];
+	[menu ocd_addItemWithTitle:@"Resize to ⅓ of Screen Width" target:self action:@selector(resizeWindowToOneThirdOfScreenWidth)    keyEquivalent:@"3" indentationLevel:1];
+	[menu ocd_addItemWithTitle:@"Resize to ¼ of Screen Width" target:self action:@selector(resizeWindowToOneQuarterOfScreenWidth)  keyEquivalent:@"4" indentationLevel:1];
+	[menu ocd_addItemWithTitle:@"Resize to ⅕ of Screen Width" target:self action:@selector(resizeWindowToOneFifthOfScreenWidth)    keyEquivalent:@"5" indentationLevel:1];
+	[menu ocd_addItemWithTitle:@"Resize to ⅙ of Screen Width" target:self action:@selector(resizeWindowToOneSixthOfScreenWidth)    keyEquivalent:@"6" indentationLevel:1];
+	[menu ocd_addItemWithTitle:@"Resize to ⅜ of Screen Width" target:self action:@selector(resizeWindowToThreeEightsOfScreenWidth) keyEquivalent:@"7" indentationLevel:1];
+	[menu ocd_addItemWithTitle:@"Resize to ⅛ of Screen Width" target:self action:@selector(resizeWindowToOneEightOfScreenWidth)    keyEquivalent:@"8" indentationLevel:1];
+	[menu ocd_addItemWithTitle:@"Resize to ⅝ of Screen Width" target:self action:@selector(resizeWindowToFiveEightsOfScreenWidth)  keyEquivalent:@"9" indentationLevel:1];
 	
 	[menu ocd_addSeparatorItem];
 	
-	[menu ocd_addItemWithTitle:@"Desktop Level"  target:self action:@selector(toggleWindowDesktopLevel)  keyEquivalent:@"d"];
-	[menu ocd_addItemWithTitle:@"Floating Level" target:self action:@selector(toggleWindowFloatingLevel) keyEquivalent:@"f"];
+	[menu ocd_addDisabledItemWithTitle:@"Level"];
+	
+	[menu ocd_addItemWithTitle:@"Desktop Level"  target:self action:@selector(toggleWindowDesktopLevel)  keyEquivalent:@"d" indentationLevel:1];
+	[menu ocd_addItemWithTitle:@"Floating Level" target:self action:@selector(toggleWindowFloatingLevel) keyEquivalent:@"f" indentationLevel:1];
 	
 	[menu ocd_addSeparatorItem];
 	
-	[menu ocd_addItemWithTitle:@"Joins All Spaces" target:self action:@selector(toggleWindowCanJoinAllSpacesCollectionBehavior) keyEquivalent:@"s"];
+	[menu ocd_addDisabledItemWithTitle:@"Spaces"];
+	
+	[menu ocd_addItemWithTitle:@"Joins All Spaces" target:self action:@selector(toggleWindowCanJoinAllSpacesCollectionBehavior) keyEquivalent:@"s" indentationLevel:1];
 	
 	[[NSApp ocd_windowMenu] ocd_insertItemWithTitle:@"Compulsion" submenu:menu atIndex:0];
 	
