@@ -22,8 +22,16 @@ const NSUInteger OCDKeyEquivalentMask = NSControlKeyMask | NSAlternateKeyMask | 
 	return item;
 }
 
+- (NSMenuItem *)ocd_addDisabledItemWithTitle:(NSString *)title {
+	NSMenuItem *item = [NSMenuItem new];
+	item.title = title;
+	item.enabled = NO;
+	[self addItem:item];
+	return item;
+}
+
 - (NSMenuItem *)ocd_addItemWithTitle:(NSString *)title submenu:(NSMenu *)submenu {
-	NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:title action:nil keyEquivalent:nil];
+	NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:title action:nil keyEquivalent:@""];
 	item.submenu = submenu;
 	[self addItem:item];
 	return item;
@@ -34,6 +42,13 @@ const NSUInteger OCDKeyEquivalentMask = NSControlKeyMask | NSAlternateKeyMask | 
 	item.target = target;
 	item.keyEquivalentModifierMask = OCDKeyEquivalentMask;
 	[self addItem:item];
+	return item;
+}
+
+- (NSMenuItem *)ocd_insertItemWithTitle:(NSString *)title submenu:(NSMenu *)submenu atIndex:(NSUInteger)index {
+	NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:title action:nil keyEquivalent:@""];
+	item.submenu = submenu;
+	[self insertItem:item atIndex:index];
 	return item;
 }
 

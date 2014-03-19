@@ -4,7 +4,7 @@
 @implementation OCDLoader
 
 + (void)load {
-	[OCDController sharedController];
+	[OCDController.sharedController addMenusToWindowMenu];
 }
 
 @end

@@ -19,17 +19,53 @@
 		363B792A18A222E60080995A /* OCDLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 363B792918A222E60080995A /* OCDLoader.m */; };
 		363B793118A225770080995A /* OCDController.m in Sources */ = {isa = PBXBuildFile; fileRef = 363B793018A225770080995A /* OCDController.m */; };
 		363B793418A226840080995A /* OCDAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 363B793318A226840080995A /* OCDAdditions.m */; };
+		36E4258018B21132008A1F75 /* Compulsion.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 363B78C418A217E30080995A /* Compulsion.bundle */; };
+		36E4258818B2172A008A1F75 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363B78C718A217E30080995A /* Cocoa.framework */; };
+		36E425C218B217A0008A1F75 /* OCDTesterMainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36E425B618B217A0008A1F75 /* OCDTesterMainMenu.xib */; };
+		36E425C418B217A0008A1F75 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 36E425BA18B217A0008A1F75 /* Credits.rtf */; };
+		36E425C718B217A0008A1F75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E425BF18B217A0008A1F75 /* main.m */; };
+		36E425C818B217A0008A1F75 /* OCDTesterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E425C118B217A0008A1F75 /* OCDTesterAppDelegate.m */; };
+		36E425CE18B21970008A1F75 /* Compulsion.icns in Resources */ = {isa = PBXBuildFile; fileRef = 36E425CD18B21970008A1F75 /* Compulsion.icns */; };
+		36E425D418B21A54008A1F75 /* OCDTesterWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E425D218B21A54008A1F75 /* OCDTesterWindow.m */; };
+		36E425D518B21A54008A1F75 /* OCDTesterWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36E425D318B21A54008A1F75 /* OCDTesterWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		363B792D18A224100080995A /* PBXContainerItemProxy */ = {
+		36E4257D18B21104008A1F75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 363B78BC18A217E20080995A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 363B78C318A217E30080995A;
+			remoteInfo = "Plug-In";
+		};
+		36E4258118B211B5008A1F75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 363B78BC18A217E20080995A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 363B790018A21EA00080995A;
 			remoteInfo = Preferences;
 		};
+		36E425CB18B21841008A1F75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 363B78BC18A217E20080995A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 363B78C318A217E30080995A;
+			remoteInfo = "Plug-In";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		36E4257F18B2111D008A1F75 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "/Library/Application Support/SIMBL/Plugins";
+			dstSubfolderSpec = 0;
+			files = (
+				36E4258018B21132008A1F75 /* Compulsion.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		363B78C418A217E30080995A /* Compulsion.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Compulsion.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +90,22 @@
 		363B793018A225770080995A /* OCDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDController.m; sourceTree = "<group>"; };
 		363B793218A226840080995A /* OCDAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDAdditions.h; sourceTree = "<group>"; };
 		363B793318A226840080995A /* OCDAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDAdditions.m; sourceTree = "<group>"; };
+		3653533C18DA0D8200A1A75E /* Introduction.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = Introduction.md; sourceTree = "<group>"; };
+		36E4258718B2172A008A1F75 /* Compulsion Tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Compulsion Tester.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E425A218B2172D008A1F75 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		36E425B718B217A0008A1F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OCDTesterMainMenu.xib; sourceTree = "<group>"; };
+		36E425BB18B217A0008A1F75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		36E425BD18B217A0008A1F75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		36E425BF18B217A0008A1F75 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		36E425C018B217A0008A1F75 /* OCDTesterAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDTesterAppDelegate.h; sourceTree = "<group>"; };
+		36E425C118B217A0008A1F75 /* OCDTesterAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDTesterAppDelegate.m; sourceTree = "<group>"; };
+		36E425C918B217DD008A1F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36E425CA18B217DD008A1F75 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		36E425CD18B21970008A1F75 /* Compulsion.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Compulsion.icns; sourceTree = "<group>"; };
+		36E425D118B21A54008A1F75 /* OCDTesterWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDTesterWindow.h; sourceTree = "<group>"; };
+		36E425D218B21A54008A1F75 /* OCDTesterWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDTesterWindow.m; sourceTree = "<group>"; };
+		36E425D318B21A54008A1F75 /* OCDTesterWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OCDTesterWindow.xib; sourceTree = "<group>"; };
+		36E425D618B21D09008A1F75 /* Notes.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,14 +126,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36E4258418B21729008A1F75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36E4258818B2172A008A1F75 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		363B78BB18A217E10080995A = {
 			isa = PBXGroup;
 			children = (
+				3653533C18DA0D8200A1A75E /* Introduction.md */,
+				36E425D618B21D09008A1F75 /* Notes.md */,
 				363B78D918A21DA70080995A /* Plug-In */,
 				363B790418A21EA00080995A /* Preferences */,
+				36E425B518B217A0008A1F75 /* Tester */,
 				363B78C618A217E30080995A /* Frameworks */,
 				363B78C518A217E30080995A /* Products */,
 			);
@@ -92,6 +155,7 @@
 			children = (
 				363B78C418A217E30080995A /* Compulsion.bundle */,
 				363B790118A21EA00080995A /* Compulsion.prefPane */,
+				36E4258718B2172A008A1F75 /* Compulsion Tester.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +165,7 @@
 			children = (
 				363B78C718A217E30080995A /* Cocoa.framework */,
 				363B78E718A21E340080995A /* PreferencePanes.framework */,
+				36E425A218B2172D008A1F75 /* XCTest.framework */,
 				363B78C918A217E30080995A /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -177,6 +242,25 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		36E425B518B217A0008A1F75 /* Tester */ = {
+			isa = PBXGroup;
+			children = (
+				36E425CD18B21970008A1F75 /* Compulsion.icns */,
+				36E425BA18B217A0008A1F75 /* Credits.rtf */,
+				36E425C918B217DD008A1F75 /* Info.plist */,
+				36E425BC18B217A0008A1F75 /* InfoPlist.strings */,
+				36E425BF18B217A0008A1F75 /* main.m */,
+				36E425C018B217A0008A1F75 /* OCDTesterAppDelegate.h */,
+				36E425C118B217A0008A1F75 /* OCDTesterAppDelegate.m */,
+				36E425B618B217A0008A1F75 /* OCDTesterMainMenu.xib */,
+				36E425D118B21A54008A1F75 /* OCDTesterWindow.h */,
+				36E425D218B21A54008A1F75 /* OCDTesterWindow.m */,
+				36E425D318B21A54008A1F75 /* OCDTesterWindow.xib */,
+				36E425CA18B217DD008A1F75 /* Prefix.pch */,
+			);
+			path = Tester;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -199,11 +283,12 @@
 				363B78C018A217E30080995A /* Sources */,
 				363B78C118A217E30080995A /* Frameworks */,
 				363B78C218A217E30080995A /* Resources */,
+				36E4257F18B2111D008A1F75 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				363B792E18A224100080995A /* PBXTargetDependency */,
+				36E4258218B211B5008A1F75 /* PBXTargetDependency */,
 			);
 			name = "Plug-In";
 			productName = Compulsion;
@@ -223,11 +308,30 @@
 			buildRules = (
 			);
 			dependencies = (
+				36E4257E18B21104008A1F75 /* PBXTargetDependency */,
 			);
 			name = Preferences;
 			productName = Preferences;
 			productReference = 363B790118A21EA00080995A /* Compulsion.prefPane */;
 			productType = "com.apple.product-type.bundle";
+		};
+		36E4258618B21729008A1F75 /* Tester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36E425AF18B2172E008A1F75 /* Build configuration list for PBXNativeTarget "Tester" */;
+			buildPhases = (
+				36E4258318B21729008A1F75 /* Sources */,
+				36E4258418B21729008A1F75 /* Frameworks */,
+				36E4258518B21729008A1F75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36E425CC18B21841008A1F75 /* PBXTargetDependency */,
+			);
+			name = Tester;
+			productName = "Compulsion Tester";
+			productReference = 36E4258718B2172A008A1F75 /* Compulsion Tester.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -253,6 +357,7 @@
 			targets = (
 				363B78C318A217E30080995A /* Plug-In */,
 				363B790018A21EA00080995A /* Preferences */,
+				36E4258618B21729008A1F75 /* Tester */,
 			);
 		};
 /* End PBXProject section */
@@ -272,6 +377,17 @@
 			files = (
 				363B792718A222240080995A /* CompulsionPreferences.icns in Resources */,
 				363B791F18A220000080995A /* CompulsionPreferences.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36E4258518B21729008A1F75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36E425C218B217A0008A1F75 /* OCDTesterMainMenu.xib in Resources */,
+				36E425D518B21A54008A1F75 /* OCDTesterWindow.xib in Resources */,
+				36E425C418B217A0008A1F75 /* Credits.rtf in Resources */,
+				36E425CE18B21970008A1F75 /* Compulsion.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,15 +422,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36E4258318B21729008A1F75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36E425C818B217A0008A1F75 /* OCDTesterAppDelegate.m in Sources */,
+				36E425C718B217A0008A1F75 /* main.m in Sources */,
+				36E425D418B21A54008A1F75 /* OCDTesterWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		363B792E18A224100080995A /* PBXTargetDependency */ = {
+		36E4257E18B21104008A1F75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 363B78C318A217E30080995A /* Plug-In */;
+			targetProxy = 36E4257D18B21104008A1F75 /* PBXContainerItemProxy */;
+		};
+		36E4258218B211B5008A1F75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 363B790018A21EA00080995A /* Preferences */;
-			targetProxy = 363B792D18A224100080995A /* PBXContainerItemProxy */;
+			targetProxy = 36E4258118B211B5008A1F75 /* PBXContainerItemProxy */;
+		};
+		36E425CC18B21841008A1F75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 363B78C318A217E30080995A /* Plug-In */;
+			targetProxy = 36E425CB18B21841008A1F75 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		36E425B618B217A0008A1F75 /* OCDTesterMainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36E425B718B217A0008A1F75 /* Base */,
+			);
+			name = OCDTesterMainMenu.xib;
+			sourceTree = "<group>";
+		};
+		36E425BA18B217A0008A1F75 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36E425BB18B217A0008A1F75 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		36E425BC18B217A0008A1F75 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36E425BD18B217A0008A1F75 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		363B78D418A217E40080995A /* Debug */ = {
@@ -443,6 +606,34 @@
 			};
 			name = Release;
 		};
+		36E425B018B2172E008A1F75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tester/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tester/Info.plist;
+				PRODUCT_NAME = "Compulsion Tester";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		36E425B118B2172E008A1F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tester/Prefix.pch;
+				INFOPLIST_FILE = Tester/Info.plist;
+				PRODUCT_NAME = "Compulsion Tester";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -462,6 +653,7 @@
 				363B78D818A217E40080995A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		363B791318A21EA10080995A /* Build configuration list for PBXNativeTarget "Preferences" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +662,16 @@
 				363B791518A21EA10080995A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36E425AF18B2172E008A1F75 /* Build configuration list for PBXNativeTarget "Tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36E425B018B2172E008A1F75 /* Debug */,
+				36E425B118B2172E008A1F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

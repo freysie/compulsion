@@ -4,4 +4,6 @@
 
 + (instancetype)sharedController;
 
+- (void)addMenusToWindowMenu;
+
 @end

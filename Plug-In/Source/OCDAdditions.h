@@ -12,8 +12,12 @@ extern const NSUInteger OCDKeyEquivalentMask;
 
 - (NSMenuItem *)ocd_addSeparatorItem;
 
+- (NSMenuItem *)ocd_addDisabledItemWithTitle:(NSString *)title;
+
 - (NSMenuItem *)ocd_addItemWithTitle:(NSString *)title submenu:(NSMenu *)submenu;
 
 - (NSMenuItem *)ocd_addItemWithTitle:(NSString *)title target:(id)target action:(SEL)action keyEquivalent:(NSString *)keyEquivalent;
+
+- (NSMenuItem *)ocd_insertItemWithTitle:(NSString *)title submenu:(NSMenu *)submenu atIndex:(NSUInteger)index;
 
 @end

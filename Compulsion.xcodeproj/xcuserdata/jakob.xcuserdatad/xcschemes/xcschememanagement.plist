@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>Compulsion Tester.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Compulsion.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -28,6 +33,16 @@
 			<true/>
 		</dict>
 		<key>363B790018A21EA00080995A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>36E4258618B21729008A1F75</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>36E425A018B2172D008A1F75</key>
 		<dict>
 			<key>primary</key>
 			<true/>

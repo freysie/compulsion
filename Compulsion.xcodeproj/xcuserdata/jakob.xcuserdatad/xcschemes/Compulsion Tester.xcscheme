@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "363B78C318A217E30080995A"
-               BuildableName = "Compulsion.bundle"
-               BlueprintName = "Plug-In"
+               BlueprintIdentifier = "36E4258618B21729008A1F75"
+               BuildableName = "Compulsion Tester.app"
+               BlueprintName = "Tester"
                ReferencedContainer = "container:Compulsion.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,7 +28,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "36E425A018B2172D008A1F75"
+               BuildableName = "Compulsion TesterTests.xctest"
+               BlueprintName = "Compulsion TesterTests"
+               ReferencedContainer = "container:Compulsion.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "36E4258618B21729008A1F75"
+            BuildableName = "Compulsion Tester.app"
+            BlueprintName = "Tester"
+            ReferencedContainer = "container:Compulsion.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -39,6 +58,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "36E4258618B21729008A1F75"
+            BuildableName = "Compulsion Tester.app"
+            BlueprintName = "Tester"
+            ReferencedContainer = "container:Compulsion.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -48,12 +76,21 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "36E4258618B21729008A1F75"
+            BuildableName = "Compulsion Tester.app"
+            BlueprintName = "Tester"
+            ReferencedContainer = "container:Compulsion.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
-      revealArchiveInOrganizer = "NO">
+      revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

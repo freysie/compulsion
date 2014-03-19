@@ -19,7 +19,7 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2014 Compulsion. All rights reserved.</string>
+	<string>Copyright © 2014 Jakob Alminde. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>OCDLoader</string>
 	<key>SIMBLTargetApplications</key>
