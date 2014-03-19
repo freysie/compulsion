@@ -12,9 +12,9 @@
 - (void)addMenusToWindowMenu {
 	NSMenu *menu = [NSMenu new];
 	
-	[menu ocd_addDisabledItemWithTitle:@"Move"];
+	[menu ocd_addDisabledItemWithTitle:@"Position"];
 	
-	[menu ocd_addItemWithTitle:@"Move to Center" target:self action:@selector(moveWindowToCenter) keyEquivalent:@"c"];
+	[menu ocd_addItemWithTitle:@"Move to Center" target:self action:@selector(moveWindowToCenter) keyEquivalent:@"c" indentationLevel:1];
 	
 //	[menu ocd_addSeparatorItem];
 	

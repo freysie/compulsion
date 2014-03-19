@@ -38,13 +38,6 @@
 			remoteGlobalIDString = 363B78C318A217E30080995A;
 			remoteInfo = "Plug-In";
 		};
-		36E4258118B211B5008A1F75 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 363B78BC18A217E20080995A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 363B790018A21EA00080995A;
-			remoteInfo = Preferences;
-		};
 		36E425CB18B21841008A1F75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 363B78BC18A217E20080995A /* Project object */;
@@ -288,7 +281,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				36E4258218B211B5008A1F75 /* PBXTargetDependency */,
 			);
 			name = "Plug-In";
 			productName = Compulsion;
@@ -439,11 +431,6 @@
 			isa = PBXTargetDependency;
 			target = 363B78C318A217E30080995A /* Plug-In */;
 			targetProxy = 36E4257D18B21104008A1F75 /* PBXContainerItemProxy */;
-		};
-		36E4258218B211B5008A1F75 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 363B790018A21EA00080995A /* Preferences */;
-			targetProxy = 36E4258118B211B5008A1F75 /* PBXContainerItemProxy */;
 		};
 		36E425CC18B21841008A1F75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
