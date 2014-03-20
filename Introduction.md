@@ -3,7 +3,9 @@
 
 ### Installation
 
-Open the *Compulsion 0.60.pkg* and click Next in the Installer.
+Open *Compulsion.xcodeproj* and hit ⌘**B**.
+
+<!--Open the *Compulsion 0.60.pkg* and click Next in the Installer.-->
 
 <!--If you already have SIMBL installed it will be upgraded to the version shipping with Compulsion.-->
 
@@ -22,13 +24,13 @@ Restart apps and check out their newly-added “Compulsion” submenu under the 
 ![Compulsion 0.60 Menu](https://raw.github.com/freyaariel/Compulsion/master/Releases/0.60%20Compulsion%20Menu.png)
 
 
+### Known Issues
+
+* The preference pane isn’t finished yet which means that the keyboard shortcuts cannot be changed.
+* When centering windows the animation may stutter slightly under some circumstances.
+
+
 ### Contributing
 
 Send pull requests.
-
-<br/>
-
-© 2014 Jack Obb Almind
-
-License: [MIT](http://opensource.org/licenses/MIT)
 
