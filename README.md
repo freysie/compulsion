@@ -23,7 +23,7 @@ Open *Compulsion.xcodeproj* and select **Build (⌘B)**.
 
 Restart apps and check out their newly-added _Compulsion_ submenu under the _Window_ menu.
 
-![Compulsion 0.60 Menu](https://raw.github.com/freyaariel/Compulsion/master/Releases/0.60%20Compulsion%20Menu.png)
+![Compulsion 0.60 Menu](/Releases/0.60%20Compulsion%20Menu.png)
 
 
 ## Known Issues
